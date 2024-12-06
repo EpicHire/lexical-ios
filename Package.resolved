@@ -3,7 +3,7 @@
     {
       "identity" : "swift-cmark",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/apple/swift-cmark.git",
+      "location" : "https://github.com/swiftlang/swift-cmark.git",
       "state" : {
         "branch" : "gfm",
         "revision" : "2c47322cb32cbed555f13bf5cbfaa488cc30a785"
@@ -12,10 +12,10 @@
     {
       "identity" : "swift-markdown",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/apple/swift-markdown.git",
+      "location" : "https://github.com/EpicHire/swift-markdown.git",
       "state" : {
         "branch" : "main",
-        "revision" : "737e34e4a71c7f8f947e5702f309620f1515e0f8"
+        "revision" : "5ab9c2ce1d4e1b7ea198323cb64e1cac9ed0e5d2"
       }
     },
     {

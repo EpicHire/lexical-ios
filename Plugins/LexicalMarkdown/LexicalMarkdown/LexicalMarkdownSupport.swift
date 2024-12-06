@@ -48,16 +48,11 @@ extension Lexical.TextNode: NodeMarkdownInlineSupport {
     }
 
     if format.italic {
-      // TODO (mani) - underline + italic both use Emphasis node
-      // should we create a separate node?
       node = Markdown.Emphasis(node)
     }
 
     if format.underline {
-      // TODO (mani) - underline + italic both use Emphasis node
-      // should we create a separate node?
-      node = Markdown.CustomInline("<u>\(node.plainText)</u>")
-      //node = Markdown.Emphasis(node)
+      node = Markdown.Underline(node)
     }
 
     if format.superScript {
