@@ -35,6 +35,8 @@ internal func onInsertTextFromUITextView(text: String, editor: Editor, updateMod
     } else {
       try selection.insertText(text)
     }
+      
+    editor.frontend?.hidePlaceholderText()
   }
 }
 

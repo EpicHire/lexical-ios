@@ -366,6 +366,10 @@ protocol LexicalTextViewDelegate: NSObjectProtocol {
       }
     } catch {}
   }
+    
+  func hidePlaceholderText() {
+    hidePlaceholderLabel()
+  }
 
   // MARK: - Private
 

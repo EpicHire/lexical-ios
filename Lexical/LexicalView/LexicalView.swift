@@ -435,6 +435,10 @@ public extension LexicalViewDelegate {
   public func showPlaceholderText() {
     textView.showPlaceholderText()
   }
+    
+  public func hidePlaceholderText() {
+    textView.hidePlaceholderText()
+  }
 
   public func setTextContainerInset(_ margins: UIEdgeInsets) {
     textView.textContainerInset = margins

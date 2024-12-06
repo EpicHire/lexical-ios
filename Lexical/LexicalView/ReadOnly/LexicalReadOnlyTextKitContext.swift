@@ -276,6 +276,10 @@ internal class LexicalReadOnlySizeCache {
   func showPlaceholderText() {
     // no-op
   }
+    
+  func hidePlaceholderText() {
+    // no-op
+  }
 
   var isFirstResponder: Bool {
     false
