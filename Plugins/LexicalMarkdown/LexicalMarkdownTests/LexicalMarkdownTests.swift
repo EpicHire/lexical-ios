@@ -6,6 +6,7 @@
  */
 
 import Foundation
+import Markdown
 @testable import Lexical
 @testable import LexicalListPlugin
 @testable import LexicalMarkdown
@@ -65,4 +66,31 @@ class LexicalMarkdownTests: XCTestCase {
 """
     XCTAssertEqual(markdownString, comparison)
   }
+    
+    func testImport() throws {
+        guard let editor = self.editor else {
+            XCTFail("no editor")
+            return
+        }
+        
+        let markdownString = """
+# Title
+
+## Heading
+
+### Subheading
+
+<u>***All formatting***</u>
+
+**Bold** *Italic* <u>Underline</u>
+
+[Link](https://google.com)
+"""
+        
+        try editor.update {
+            try LexicalMarkdown.insertFromMarkdown(with: editor, markdown: Document(parsing: markdownString))
+        }
+        
+        print(try LexicalMarkdown.generateMarkdown(from: editor, selection: nil))
+    }
 }
